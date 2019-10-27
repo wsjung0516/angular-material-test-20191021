@@ -6,12 +6,16 @@ import { TableComponent } from './table/table.component';
 import { TreeComponent } from './tree/tree.component';
 import {TestCarouselComponent} from './test-carousel/test-carousel.component';
 import {CarouselComponent} from './carousel/carousel.component';
+import {CdkTableComponent} from './cdk-table/cdk-table.component';
+import {InifiniteDemoComponent} from './inifinite-demo/inifinite-demo.component';
 
 
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'table', component: TableComponent },
+  { path: 'cdk-table', component: CdkTableComponent },
+  { path: 'infinite-demo', component: InifiniteDemoComponent },
   { path: 'tree', component: TreeComponent },
   { path: 'drag', component: DragdropComponent },
   { path: 'test_carousel', component: TestCarouselComponent },

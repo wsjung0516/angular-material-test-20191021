@@ -31,6 +31,9 @@ import {MatChipsModule, MatDialogModule} from '@angular/material';
 import { CarouselComponent } from './carousel/carousel.component';
 import { TestCarouselComponent } from './test-carousel/test-carousel.component';
 import {CarouselModule} from 'ngx-bootstrap';
+import { CdkTableComponent } from './cdk-table/cdk-table.component';
+import {HttpClientModule} from '@angular/common/http';
+import { InifiniteDemoComponent } from './inifinite-demo/inifinite-demo.component';
 
 @NgModule({
   declarations: [
@@ -42,9 +45,12 @@ import {CarouselModule} from 'ngx-bootstrap';
     TreeComponent,
     DragdropComponent,
     CarouselComponent,
-    TestCarouselComponent
+    TestCarouselComponent,
+    CdkTableComponent,
+    InifiniteDemoComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
