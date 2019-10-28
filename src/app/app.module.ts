@@ -34,6 +34,7 @@ import {CarouselModule} from 'ngx-bootstrap';
 import { CdkTableComponent } from './cdk-table/cdk-table.component';
 import {HttpClientModule} from '@angular/common/http';
 import { InifiniteDemoComponent } from './inifinite-demo/inifinite-demo.component';
+import { PDragdropComponent } from './p-dragdrop/p-dragdrop.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { InifiniteDemoComponent } from './inifinite-demo/inifinite-demo.componen
     CarouselComponent,
     TestCarouselComponent,
     CdkTableComponent,
-    InifiniteDemoComponent
+    InifiniteDemoComponent,
+    PDragdropComponent
   ],
   imports: [
     HttpClientModule,

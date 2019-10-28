@@ -8,6 +8,7 @@ import {TestCarouselComponent} from './test-carousel/test-carousel.component';
 import {CarouselComponent} from './carousel/carousel.component';
 import {CdkTableComponent} from './cdk-table/cdk-table.component';
 import {InifiniteDemoComponent} from './inifinite-demo/inifinite-demo.component';
+import {PDragdropComponent} from './p-dragdrop/p-dragdrop.component';
 
 
 
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'infinite-demo', component: InifiniteDemoComponent },
   { path: 'tree', component: TreeComponent },
   { path: 'drag', component: DragdropComponent },
+  { path: 'p-drag', component: PDragdropComponent },
   { path: 'test_carousel', component: TestCarouselComponent },
   { path: 'carousel', component: CarouselComponent },
 ];
