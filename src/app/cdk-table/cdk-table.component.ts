@@ -46,7 +46,7 @@ export class CdkTableComponent implements OnInit, AfterViewInit {
 
   public ngAfterViewInit(): void {
     fromEvent(this.matTableRef.nativeElement, 'scroll')
-      .pipe(debounceTime(700))
+      .pipe(debounceTime(500))
       .subscribe((e: any) => this.onTableScroll(e));
   }
 

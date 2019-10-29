@@ -34,6 +34,7 @@ import {CarouselModule} from 'ngx-bootstrap';
 import { CdkTableComponent } from './cdk-table/cdk-table.component';
 import {HttpClientModule} from '@angular/common/http';
 import { InifiniteDemoComponent } from './inifinite-demo/inifinite-demo.component';
+import {StickyHeaderComponent} from "./components/sticky-header.component";
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { InifiniteDemoComponent } from './inifinite-demo/inifinite-demo.componen
     CarouselComponent,
     TestCarouselComponent,
     CdkTableComponent,
+    StickyHeaderComponent,
     InifiniteDemoComponent
   ],
   imports: [

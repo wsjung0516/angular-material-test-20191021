@@ -57,7 +57,7 @@ export class CdkTableDatasource extends DataSource<TableItem> {
   getUserData( page, limit) {
     const turl = url + `/comments?_limit=${limit}&_page=${page}`;
     console.log( 'turl-->', turl);
-    return this.http.get<USER[]>(turl).pipe(delay(500));
+    return this.http.get<USER[]>(turl);
   }
   /**
    * Connect this data source to the table. The table will only update when
