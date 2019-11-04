@@ -34,11 +34,8 @@ import {CarouselModule} from 'ngx-bootstrap';
 import { CdkTableComponent } from './cdk-table/cdk-table.component';
 import {HttpClientModule} from '@angular/common/http';
 import { InifiniteDemoComponent } from './inifinite-demo/inifinite-demo.component';
-<<<<<<< HEAD
-import {StickyHeaderComponent} from "./components/sticky-header.component";
-=======
 import { PDragdropComponent } from './p-dragdrop/p-dragdrop.component';
->>>>>>> 6793e19c8bcf1e306b99164971c86a763de1c67e
+import {RealTableComponent} from "./real-table/real-table.component";
 
 @NgModule({
   declarations: [
@@ -46,19 +43,15 @@ import { PDragdropComponent } from './p-dragdrop/p-dragdrop.component';
     DashboardComponent,
     NavbarComponent,
     TableComponent,
+    RealTableComponent,
     FooterComponent,
     TreeComponent,
     DragdropComponent,
     CarouselComponent,
     TestCarouselComponent,
     CdkTableComponent,
-<<<<<<< HEAD
-    StickyHeaderComponent,
-    InifiniteDemoComponent
-=======
     InifiniteDemoComponent,
     PDragdropComponent
->>>>>>> 6793e19c8bcf1e306b99164971c86a763de1c67e
   ],
   imports: [
     HttpClientModule,

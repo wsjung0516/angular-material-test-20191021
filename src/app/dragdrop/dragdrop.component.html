@@ -24,8 +24,8 @@
          [infiniteScrollThrottle]="50"
          [scrollWindow]="false"
          [infiniteScrollDisabled]= "false"
-         (scrolled)="onScrollDown()"
-         (scrolledUp)="onUp()">
+         (scrolled)="onScrollDown({})"
+         (scrolledUp)="onUp({})">
       <div class="container">
 
         <div cdkDropList #doneList="cdkDropList"

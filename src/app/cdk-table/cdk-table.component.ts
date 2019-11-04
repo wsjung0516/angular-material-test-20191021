@@ -50,7 +50,7 @@ export class CdkTableComponent implements OnInit, AfterViewInit {
       .subscribe((e: any) => this.onTableScroll(e));
   }
 
-  private onTableScroll(e: any): void {
+  onTableScroll(e: any): void {
     const tableViewHeight = e.target.offsetHeight; // viewport: ~500px
     const tableScrollHeight = e.target.scrollHeight; // length of all table
     const scrollLocation = e.target.scrollTop; // how far user scrolled

@@ -9,12 +9,15 @@ import {CarouselComponent} from './carousel/carousel.component';
 import {CdkTableComponent} from './cdk-table/cdk-table.component';
 import {InifiniteDemoComponent} from './inifinite-demo/inifinite-demo.component';
 import {PDragdropComponent} from './p-dragdrop/p-dragdrop.component';
+import {RealTableComponent} from "./real-table/real-table.component";
 
 
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'table', component: TableComponent },
+  { path: 'table', component: TableComponent },
+  { path: 'real-table', component: RealTableComponent },
   { path: 'cdk-table', component: CdkTableComponent },
   { path: 'infinite-demo', component: InifiniteDemoComponent },
   { path: 'tree', component: TreeComponent },

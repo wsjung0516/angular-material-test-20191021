@@ -7,7 +7,7 @@
       [cdkDropListData]="items"
       class="example-list"
       cdkDropListSortingDisabled
-      (cdkDropListDropped)="drop($event)">
+      (cdkDropListDropped)="dropA($event)">
       <div class="example-box" *ngFor="let item of pItems" cdkDrag>{{item}}</div>
     </div>
   </div>
@@ -19,7 +19,7 @@
       cdkDropList
       [cdkDropListData]="basket"
       class="example-list"
-      (cdkDropListDropped)="drop($event)">
+      (cdkDropListDropped)="dropB($event)">
       <div class="example-box" *ngFor="let item of basket" cdkDrag>{{item}}</div>
     </div>
   </div>

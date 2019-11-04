@@ -27,7 +27,7 @@ export class PDragdropComponent implements OnInit {
     this.pItems = [...this.items];
   }
 
-  drop(event: CdkDragDrop<string[]>) {
+  dropA(event: CdkDragDrop<string[]>) {
     if (event.previousContainer === event.container) {
       moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
     } else {
@@ -35,6 +35,20 @@ export class PDragdropComponent implements OnInit {
         event.container.data,
         event.previousIndex,
         event.currentIndex);
+      console.log('A--dropA', event.container.data)
+      console.log('A--dropB', event.previousContainer.data)
+    }
+  }
+  dropB(event: CdkDragDrop<string[]>) {
+    if (event.previousContainer === event.container) {
+      moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+    } else {
+      transferArrayItem(event.previousContainer.data,
+        event.container.data,
+        event.previousIndex,
+        event.currentIndex);
+      console.log('dropA', event.previousContainer.data)
+      console.log('dropB', event.currentIndex, event.container.data)
     }
   }
 }
