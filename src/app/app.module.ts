@@ -27,7 +27,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import {InfiniteScrollModule} from 'ngx-infinite-scroll';
-import {MatChipsModule, MatDialogModule} from '@angular/material';
+import {MatChipsModule, MatDialogModule, MatFormFieldModule, MatInputModule} from '@angular/material';
 import { CarouselComponent } from './carousel/carousel.component';
 import { TestCarouselComponent } from './test-carousel/test-carousel.component';
 import {CarouselModule} from 'ngx-bootstrap';
@@ -76,6 +76,8 @@ import {RealTableComponent} from "./real-table/real-table.component";
     // ScrollingModule,
     MatChipsModule,
     MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
     CarouselModule.forRoot()
   ],
   entryComponents: [DragdropComponent, CarouselComponent],

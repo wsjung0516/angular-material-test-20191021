@@ -15,52 +15,6 @@ export interface RealTableItem {
   thumbnailUrl: string;
 }
 
-// TODO: replace this with real data from your application
-/*
-const EXAMPLE_DATA: TableItem[] = [
-  {id: 1, name: 'Hydrogen'},
-  {id: 2, name: 'Helium'},
-  {id: 3, name: 'Lithium'},
-  {id: 4, name: 'Beryllium'},
-  {id: 5, name: 'Boron'},
-  {id: 6, name: 'Carbon'},
-  {id: 7, name: 'Nitrogen'},
-  {id: 8, name: 'Oxygen'},
-  {id: 9, name: 'Fluorine'},
-  {id: 10, name: 'Neon'},
-  {id: 11, name: 'Sodium'},
-  {id: 12, name: 'Magnesium'},
-  {id: 13, name: 'Aluminum'},
-  {id: 14, name: 'Silicon'},
-  {id: 15, name: 'Phosphorus'},
-  {id: 16, name: 'Sulfur'},
-  {id: 17, name: 'Chlorine'},
-  {id: 18, name: 'Argon'},
-  {id: 19, name: 'Potassium'},
-  {id: 20, name: 'Calcium'},
-  {id: 21, name: 'Hydrogen'},
-  {id: 22, name: 'Helium'},
-  {id: 23, name: 'Lithium'},
-  {id: 24, name: 'Beryllium'},
-  {id: 25, name: 'Boron'},
-  {id: 26, name: 'Carbon'},
-  {id: 27, name: 'Nitrogen'},
-  {id: 28, name: 'Oxygen'},
-  {id: 29, name: 'Fluorine'},
-  {id: 30, name: 'Neon'},
-  {id: 31, name: 'Sodium'},
-  {id: 32, name: 'Magnesium'},
-  {id: 33, name: 'Aluminum'},
-  {id: 34, name: 'Silicon'},
-  {id: 35, name: 'Phosphorus'},
-  {id: 36, name: 'Sulfur'},
-  {id: 37, name: 'Chlorine'},
-  {id: 38, name: 'Argon'},
-  {id: 39, name: 'Potassium'},
-  {id: 30, name: 'Calcium'},
-];
-*/
-
 /**
  * Data source for the Table view. This class should
  * encapsulate all logic for fetching and manipulating the displayed data
@@ -108,11 +62,12 @@ export class RealTableDataSource extends DataSource<RealTableItem> {
   private getPagedData() {
     let url = `https://jsonplaceholder.typicode.com/photos?_limit=10&_page=${this.paginator.page}`;
     let bdata: RealTableItem[] = [];
-    return  this.http.get<RealTableItem[]>(url).subscribe((da)=> {
+    this.http.get<RealTableItem[]>(url).subscribe((da)=> {
     console.log('bdata-->',da);
       bdata = [...da];
       return bdata;
     });
+    return bdata;
 
 /*
     const startIndex = this.paginator.pageIndex * this.paginator.pageSize;
